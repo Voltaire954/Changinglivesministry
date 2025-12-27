@@ -9,4 +9,4 @@ tzdata==2025.3
 psycopg[binary]
 gunicorn==23.0.0
 Werkzeug==3.1.4
-whitenoise-6.11.0
+whitenoise==6.6.0
