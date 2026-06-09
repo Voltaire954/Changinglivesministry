@@ -4,6 +4,8 @@ from users.permissions import IsDeaconOrAbove
 from services.services import create_service, update_service, delete_service
 from .models import Service
 from .serializers import ServiceSerializer
+from rest_framework.permissions import AllowAny
+
 
 class ServiceViewSet(ModelViewSet):
     queryset = Service.objects.all()
@@ -11,7 +13,7 @@ class ServiceViewSet(ModelViewSet):
 
     def get_permissions(self):
         if self.action in ["list", "retrieve"]:
-            return [IsAuthenticated()]
+            return [AllowAny()]
         return [IsDeaconOrAbove()]
 
     def perform_create(self, serializer):

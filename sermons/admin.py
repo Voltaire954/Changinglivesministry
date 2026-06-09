@@ -1,4 +1,6 @@
 from django.contrib import admin
-from .models import Donation
-admin.site.register(Donation)
+from .models import Sermon
+
+
+admin.site.register(Sermon)
 # Register your models here.

@@ -28,6 +28,7 @@ urlpatterns = [
     path("api/services/", include("services.urls")),
     path("api/media/", include("media.urls")),
     path("api/donations/", include("donations.urls")),
+    path("api/sermons/", include("sermons.urls")),
 
 ]
 if settings.DEBUG:
