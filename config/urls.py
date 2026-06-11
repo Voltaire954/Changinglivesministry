@@ -29,7 +29,7 @@ urlpatterns = [
     path("api/media/", include("media.urls")),
     path("api/donations/", include("donations.urls")),
     path("api/sermons/", include("sermons.urls")),
-
+    path("api/livestream/", include("livestream.urls")),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,

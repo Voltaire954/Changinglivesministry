@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "unsafe-dev-key")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [".onrender.com","*"]
+ALLOWED_HOSTS = [".onrender.com", "*"]
 
 
 # Application definition
@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'donations',
     'corsheaders',
     'sermons',
-
+    "livestream",
 ]
 
 MIDDLEWARE = [
